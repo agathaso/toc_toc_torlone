@@ -13,6 +13,18 @@
     --verdeesc: #D0EDD9;
 }
 
+@font-face {
+    font-family: vanila caramel;
+    src: url(./font/Vanilla\ Caramel.otf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: Supermalibu;
+    src: url(./font/Super\ Malibu.ttf);
+    font-weight: 400;
+}
+
 body {
     background-color: var(--fundo-site);
 }
@@ -148,75 +160,60 @@ header>div.container-flex {
     }
 }
 
-/* --- ESTILOS DA SEÇÃO #SOBRE --- */
-
-#sobre {
-    /* Ajustando o layout da seção */
-    display: flex; /* Para alinhar imagem e texto lado a lado (se houver) */
-    align-items: center; /* Centraliza verticalmente o conteúdo */
-    justify-content: space-around; /* Distribui o espaço entre os elementos */
-    gap: 40px; /* Espaço entre a imagem e o texto (se for um layout flex) */
-    
-    /* Margens da seção (adaptadas da sua original) */
-    margin-top: 120px;
-    margin-bottom: 120px;
+.quadrado {
+    background-color: var(--verde);
+    padding: 25px;
+    border-radius: 5%;
+    margin-bottom: 50px;
 }
 
-#sobre img {
-    /* Estilo da Imagem */
-    max-width: 460px;
-    width: 40%;
-    border-radius: 40px;
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
-}
-
-/* --- ESTILOS DE TÍTULOS E TEXTOS DENTRO DE #SOBRE --- */
-
-#sobre h2 {
-    /* Estilo do Título H2 dentro de #sobre (Se houver) */
-    color: var(--branco); /* Requer a variável --branco */
-    margin-bottom: 0;
-    background-color: var(--verde-cnl); /* Requer a variável --verde-cnl */
-    border-radius: 20px;
-    padding: 10px 18px;
-    margin-right: 5px; /* Mantido do seu código, mas pode ser ajustado */
-}
-
-#sobre p {
-    /* Estilo do Parágrafo */
-    font-family: "Recursive", sans-linear; /* Requer a importação da fonte "Recursive" */
-    font-size: 20px;
-    text-align: justify;
-    margin-top: 30px;
-}
-
-/* --- ESTILOS GENÉRICOS DE TÍTULOS DE SEÇÃO (.titulo) --- */
-
-.titulo h2 {
-    /* Regras para Títulos H2 que estão dentro da classe .titulo */
-    color: var(--branco);
-    margin-bottom: 0;
-    background-color: var(--verde-cnl);
-    border-radius: 20px;
-    padding: 10px 18px;
-}
-
-.titulo span {
-    /* Estilo para destaque dentro do título */
-    color: var(--verde-cnl);
-}
-
-
-/* --- ESTILOS DA SEÇÃO #FEITOS --- */
-
-#feitos {
-    /* Estilos da seção #feitos */
-    margin-bottom: 120px;
-}
-
-#feitos .titulo { /* O ID correto é #feitos, não #feitoss */
-    /* Centraliza o contêiner do título dentro da seção #feitos */
+.conteudo-sobre {
+    background-color: #D0EDD9;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 900px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #fff1cf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+    padding: 20px;
+
+}
+
+footer>h2 {}
+
+footer>nav {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    margin-bottom: 55px;
+    column-gap: 50px;
+    row-gap: 25px;
+    flex-wrap: wrap;
+    max-width: 55%;
+}
+
+.contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.contato img {
+    width: 25px;
 }
